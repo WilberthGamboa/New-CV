@@ -1,0 +1,142 @@
+/* Globales*/
+:root{
+    --azul:#13293D;
+    --crema:#EDDEA4;
+    --fondo:#F7F4F3;
+    --titleColor:#12355B;
+    --textAsideColor:#FFFFFF;
+    --textMainColor:#272838;
+    --texto__wilberth:  'Poppins', sans-serif;
+}
+
+*html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-size: 16px; /* 1rem=10px*/
+
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px; /* 1rem=10px*/
+    /*background-image: linear-gradient(to bottom, #ccdad5, #abc4c0, #8badaf, #6c97a0, #4f8092);*/
+    background-color: var(--fondo);
+    
+}
+
+img{
+    max-width: 100%;
+}
+h1,h2,h3{
+    text-align: center;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    background-color: var(--azul);
+}
+.aside{
+    background-color:var(--crema) ;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.main{
+    grid-column: 1/2;
+}
+
+.aside{
+    grid-column: 2/3;
+}
+/* FOTO, TEXTO Y BARRA CV*/
+
+.wilberth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--texto__wilberth);
+    color: var(--textAsideColor);
+    text-align: center;
+       
+}
+
+.wilberth__imagen img{
+    border-radius: 50%;
+}
+.wilberth__imagen{
+    width: 70%;
+    padding-top: 2rem;
+}
+
+.wilberth__texto{
+    text-transform: uppercase;
+    margin: .5rem 0rem ;
+}
+.wilberth__texto--nombre{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.wilberth__texto--carrera{
+    font-weight:lighter;
+}
+.wilberth__borde{
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    width: 70%;
+}
+
+/*CONTACTO */
+.contacto{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+
+.contacto__titulo{
+    grid-column: -1/1;
+    
+    text-transform: uppercase;
+    color:var(--textAsideColor);
+    font-family: var(--texto__wilberth);
+    text-align: left;
+    margin-left: 5%;
+}
+
+.contacto__incono {
+    display: flex;
+    color:var(--textAsideColor);
+   
+    
+} 
+
+.contacto__incono--correo{
+    grid-column: 1/2;
+}
+.contacto__incono--github{
+    grid-column: 2/2;
+}
+
+
+
+
+
+
